@@ -8,7 +8,7 @@ body h1 {
 
 #btn-clean {
   margin: 1em 0em;
-  width: 95vw;
+  width: 95vh;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   text-transform: uppercase;
@@ -16,8 +16,8 @@ body h1 {
 
 #app {
   display: grid;
-  width: 95vw;
-  height: 95vw;
+  width: 85vh;
+  height: 85vh;
 }
 
 .pixel {
