@@ -1,16 +1,21 @@
 console.log("Hola Mundo");
 
-let gridX = 8;
-const gridSize = gridX * gridX;
+let gridX = 0;
+let gridSize = 0;
 const $app = document.querySelector("#app");
 
-// function getUserValue() {
-//   return Number(prompt("De que tamano quieres la grilla?"));
-// }
-
-// function alertUser() {
-//   return alert("Debes ingresar un numero entre 1 y 100");
-// }
+function setGrid() {
+  newValue = parseInt(prompt("De que tamano quieres la grilla?", "16"));
+  if (newValue < 1 || newValue > 100 || isNaN(newValue)) {
+    alert("Debes ingresar un numero entre 1 y 100");
+    setGrid();
+  } else {
+    gridX = newValue;
+    gridSize = gridX * gridX;
+    $app.style["grid-template-columns"] = `repeat(${gridX}, 1fr)`;
+    $app.style["grid-template-rows"] = `repeat(${gridX}, 1fr)`;
+  }
+}
 
 function startApp() {
   for (let i = 0; i < gridSize; i++) {
@@ -50,6 +55,7 @@ function clearApp() {
 
 function runApp() {
   clearApp();
+  setGrid();
   startApp();
 }
 

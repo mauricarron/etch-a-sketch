@@ -9,14 +9,13 @@ body h1 {
 #btn-clean {
   margin: 1em 0em;
   width: 95vw;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   text-transform: uppercase;
 }
 
 #app {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
   width: 95vw;
   height: 95vw;
 }
