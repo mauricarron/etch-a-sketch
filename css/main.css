@@ -1,0 +1,28 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body h1 {
+  text-align: center;
+}
+
+#btn-clean {
+  margin: 1em 0em;
+  width: 95vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 95vw;
+  height: 95vw;
+}
+
+.pixel {
+  min-width: 1px;
+  min-height: 1px;
+  border: 1px solid lightgray;
+}
